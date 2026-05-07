@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinta Imajinasi | Dreamy Coquette Shop</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ribbon-decor top-10 left-5">🎀</div>
+    <div class="ribbon-decor top-40 right-10">🌸</div>
+    <div class="ribbon-decor bottom-20 left-10">✨</div>
+
+    <nav class="navbar sticky top-0 z-50 px-6 py-4 flex justify-between items-center shadow-sm">
+        <div class="logo text-3xl font-bold text-pink-400">Tinta Imajinasi</div>
+        
+        <div id="auth-container">
+            <button id="login-btn" class="btn-outline px-6 py-2 rounded-full">
+                Login with Gmail
+            </button>
+            <div id="user-info" class="hidden flex items-center gap-4">
+                <span id="display-name" class="text-sm font-semibold text-pink-600"></span>
+                <button id="logout-btn" class="text-xs text-gray-500 underline hover:text-red-400">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center py-20 px-4">
+        <h1 class="text-6xl text-pink-400 mb-4 font-fancy">Koleksi Mewarnai Ajaib</h1>
+        <p class="text-lg max-w-2xl mx-auto text-gray-600">
+            Temukan 30 tema buku mewarnai PDF printable yang dirancang dengan cinta untuk kreativitas si kecil. 
+            Hanya Rp 15.000 per buku! 🎀
+        </p>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            </div>
+    </main>
+
+    <div id="floating-cart" class="fixed bottom-8 right-8 p-4 flex items-center gap-4 cart-hidden transition-all duration-500">
+        <div class="cart-icon bg-white rounded-full p-4 text-2xl shadow-lg">🛒</div>
+        <div class="cart-details flex flex-col bg-yellow-100 p-3 rounded-2xl shadow-md border border-yellow-200">
+            <span id="cart-count" class="font-bold text-sm text-yellow-800">0 Item terpilih</span>
+            <button id="checkout-btn" class="bg-pink-400 text-white text-xs px-4 py-2 rounded-full mt-2 hover:bg-pink-500 transition">
+                Checkout WA
+            </button>
+        </div>
+    </div>
+
+    <footer class="py-12 text-center bg-pink-50">
+        <p class="font-fancy text-2xl text-pink-400 mb-2">Tinta Imajinasi</p>
+        <p class="text-sm text-gray-400">© 2024 Keajaiban Mewarnai Anak. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
